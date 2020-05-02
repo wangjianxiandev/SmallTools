@@ -1,0 +1,2 @@
+rootProject.name='SmallTools'
+include ':app'
