@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/insert_call_log"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/safe_padding"
+    android:paddingTop="@dimen/safe_padding"
+    android:paddingRight="@dimen/safe_padding"
+    android:paddingBottom="@dimen/safe_padding">
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/call_log_count"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/numberTextView"
+        app:layout_constraintTop_toTopOf="@id/numberTextView" />
+
+    <TextView
+        android:id="@+id/callTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/safe_padding"
+        android:gravity="center"
+        android:text="@string/call_log_type"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/numberTextView"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+
+    <RadioGroup
+        android:id="@+id/call_log_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/safe_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/callTypeTextView">
+
+        <RadioButton
+            android:id="@+id/call_out"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/call_out" />
+
+        <RadioButton
+            android:id="@+id/call_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/call_in" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/in_call_log_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/safe_padding"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/call_log_type">
+
+        <RadioButton
+            android:id="@+id/call_receive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/call_receive" />
+
+        <RadioButton
+            android:id="@+id/call_unreceive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/call_unreceive" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/safe_padding"
+        android:gravity="center"
+        android:text="@string/call_log_number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_call_log_type" />
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/phoneNumberTextView"
+        app:layout_constraintTop_toTopOf="@id/phoneNumberTextView" />
+
+
+    <Button
+        android:id="@+id/insertCallLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/safe_padding"
+        android:text="@string/insert_call_log"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
