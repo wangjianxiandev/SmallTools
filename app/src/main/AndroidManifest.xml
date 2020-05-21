@@ -51,15 +51,13 @@
         </service>
 
         <service android:name="com.lzf.easyfloat.service.FloatService" />
-        <!--<provider-->
-        <!--android:authorities="luyao.box.fileprovider"-->
-        <!--android:name="androidx.core.content.FileProvider"-->
-        <!--android:exported="false"-->
-        <!--android:grantUriPermissions="true">-->
-        <!--<meta-data-->
-        <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
-        <!--android:resource="@xml/file_paths"/>-->
-        <!--</provider>-->
+        <receiver android:name=".keeplive.Receiver1" android:process=":resident" />
+        <service android:name=".keeplive.Service1" android:process=":resident" />
+        <activity android:name=".keeplive.Activity1" android:process=":resident" />
+
+        <receiver android:name=".keeplive.Receiver2" android:process="android.media" />
+        <activity android:name=".keeplive.Activity2" android:process="android.media" />
+        <service android:name=".keeplive.Service2" android:process="android.media" />
     </application>
 
 </manifest>
