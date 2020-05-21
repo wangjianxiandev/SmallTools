@@ -1,4 +1,4 @@
-package com.wjx.android.smalltools.calllog
+package com.wjx.android.smalltools.module.calllog
 
 /**
  * Created with Android Studio.

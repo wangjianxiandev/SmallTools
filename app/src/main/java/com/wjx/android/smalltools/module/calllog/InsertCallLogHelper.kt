@@ -1,4 +1,4 @@
-package com.wjx.android.smalltools.calllog
+package com.wjx.android.smalltools.module.calllog
 
 import android.content.AsyncQueryHandler
 import android.content.ContentResolver

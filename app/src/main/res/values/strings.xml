@@ -8,4 +8,11 @@
     <string name="call_unreceive">未接</string>
     <string name="call_log_number">号码</string>
     <string name="insert_call_log">插入通话记录</string>
+    <string name="about">关于</string>
+    <string name="current_activity">当前Activity</string>
+    <string name="float_window">显示悬浮窗</string>
+    <string name="accessibility_service">无障碍服务</string>
+    <string name="accessibility_note">2. 打开无障碍服务\n\n    SmallTools 通过无障碍服务来获取当前的 Activity 名称。开启无障碍服务需要您的手动确认，SmallTools 保证不会收集任何信息。请在系统弹出的 无障碍 选项中找到 SmallTools，并打开无障碍开关。</string>
+    <string name="floatwindow_note">1. 打开悬浮窗\n\n    SmallTools 将在悬浮窗中显示当前 Activity 名称。首次开启悬浮窗，系统将询问 SmallTools 是否可在其他应用上层显示，请打开该选项。\n上面的 显示悬浮窗 开关可以控制悬浮窗的显示和关闭。\n悬浮窗可以拖动到任意位置。</string>
+    <string name="accessibility_service_description">开启无障碍服务以查看当前 Activity</string>
 </resources>

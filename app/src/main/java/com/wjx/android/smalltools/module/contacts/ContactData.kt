@@ -1,4 +1,4 @@
-package com.wjx.android.smalltools.contacts
+package com.wjx.android.smalltools.module.contacts
 
 /**
  * Created with Android Studio.

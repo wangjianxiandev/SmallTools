@@ -1,9 +1,8 @@
-package com.wjx.android.smalltools.calllog
+package com.wjx.android.smalltools.module.calllog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.RadioButton
 import com.wjx.android.smalltools.R
 import kotlinx.android.synthetic.main.activity_calllog.*
 
