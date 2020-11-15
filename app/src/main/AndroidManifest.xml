@@ -52,6 +52,15 @@
                 android:resource="@xml/accessibility_service_config" />
         </service>
         <service android:name="com.lzf.easyfloat.service.FloatService" />
+
+        <receiver android:name=".keeplive.Receiver1" android:process=":resident" />
+        <service android:name=".keeplive.Service1" android:process=":resident" />
+        <activity android:name=".keeplive.Activity1" android:process=":resident" />
+
+        <receiver android:name=".keeplive.Receiver2" android:process="android.media" />
+        <activity android:name=".keeplive.Activity2" android:process="android.media" />
+        <service android:name=".keeplive.Service2" android:process="android.media" />
+
     </application>
 
 </manifest>

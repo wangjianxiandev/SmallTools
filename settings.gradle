@@ -1,2 +1,3 @@
 rootProject.name='SmallTools'
 include ':app'
+include ':library'
