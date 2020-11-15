@@ -5,7 +5,7 @@ import com.lzf.easyfloat.permission.PermissionUtils
 import com.wjx.android.smalltools.R
 import com.wjx.android.smalltools.common.SHOW_WINDOW
 import com.wjx.android.smalltools.common.SPreference
-import com.wjx.android.smalltools.common.goToAccessibilitySetting
+import com.wjx.android.smalltools.common.ext.goToAccessibilitySetting
 import com.wjx.android.smalltools.module.currentactivity.BoxAccessibilityService
 import com.wjx.android.smalltools.module.currentactivity.FloatWindowManager
 import kotlinx.android.synthetic.main.activity_current.*

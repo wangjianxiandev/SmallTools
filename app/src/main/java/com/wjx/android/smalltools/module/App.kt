@@ -1,9 +1,7 @@
 package com.wjx.android.smalltools.module
 
 import android.app.Application
-import android.content.Context
 import com.wjx.android.smalltools.common.SPreference
-import kotlin.properties.Delegates
 
 /**
  * Created with Android Studio.

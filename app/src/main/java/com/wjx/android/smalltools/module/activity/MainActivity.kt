@@ -6,7 +6,7 @@ import com.wjx.android.smalltools.R
 import com.wjx.android.smalltools.adapter.MainAdapter
 import com.wjx.android.smalltools.module.calllog.CalllogActivity
 import com.wjx.android.smalltools.common.MAIN_LIST
-import com.wjx.android.smalltools.common.itemPadding
+import com.wjx.android.smalltools.common.ext.itemPadding
 import com.wjx.android.smalltools.common.startActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_content.*
@@ -34,7 +34,7 @@ class MainActivity : BaseActivity() {
             when (mMainAdapter.data[position].name) {
                 "反编译" -> startActivity<CalllogActivity>(this)
                 "当前Activity" -> startActivity<CurrentActivity>(this)
-                "本机信息" -> startActivity<CalllogActivity>(this)
+                "本机信息" -> startActivity<DeviceInfoActivity>(this)
             }
         }
     }
