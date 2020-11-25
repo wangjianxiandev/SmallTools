@@ -1,7 +1,9 @@
 package com.wjx.android.smalltools.common
 
+import android.os.Environment
 import com.wjx.android.smalltools.R
 import com.wjx.android.smalltools.bean.MainData
+import java.io.File
 
 /**
  * Created with Android Studio.
@@ -15,5 +17,9 @@ val MAIN_LIST = mutableListOf(
     MainData(R.drawable.ic_device_info, "本机信息")
 )
 
+val BASE_PATH =
+    "${Environment.getExternalStorageDirectory().path}${File.separator}Box${File.separator}"
+val APK_PATH = "${BASE_PATH}apk${File.separator}"
+val REVERSE_PATH = "${BASE_PATH}reverse${File.separator}"
 const val SHOW_WINDOW = "show_window"
 const val SHOW_LOG = "show_log"

@@ -3,6 +3,7 @@ package com.wjx.android.smalltools.module.activity
 import android.app.AlertDialog
 import com.lzf.easyfloat.permission.PermissionUtils
 import com.wjx.android.smalltools.R
+import com.wjx.android.smalltools.base.BaseActivity
 import com.wjx.android.smalltools.common.SHOW_WINDOW
 import com.wjx.android.smalltools.common.SPreference
 import com.wjx.android.smalltools.common.ext.goToAccessibilitySetting

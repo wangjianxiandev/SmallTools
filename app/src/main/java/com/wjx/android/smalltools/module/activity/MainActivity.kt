@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.recyclerview.widget.GridLayoutManager
 import com.wjx.android.smalltools.R
 import com.wjx.android.smalltools.adapter.MainAdapter
+import com.wjx.android.smalltools.base.BaseActivity
 import com.wjx.android.smalltools.module.calllog.CalllogActivity
 import com.wjx.android.smalltools.common.MAIN_LIST
 import com.wjx.android.smalltools.common.ext.itemPadding

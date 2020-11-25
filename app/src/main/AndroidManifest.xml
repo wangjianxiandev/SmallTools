@@ -18,9 +18,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".module.activity.DeviceInfoActivity"></activity>
+        <activity android:name=".module.decompile.view.DecompileActivity"></activity>
+        <activity android:name=".module.activity.DeviceInfoActivity" />
         <activity android:name=".module.activity.CurrentActivity" />
-        <activity android:name=".module.activity.BaseActivity" />
+        <activity android:name=".base.BaseActivity" />
         <activity android:name=".module.calllog.CalllogActivity">
 
             <!-- <intent-filter> -->
@@ -53,14 +54,29 @@
         </service>
         <service android:name="com.lzf.easyfloat.service.FloatService" />
 
-        <receiver android:name=".keeplive.Receiver1" android:process=":resident" />
-        <service android:name=".keeplive.Service1" android:process=":resident" />
-        <activity android:name=".keeplive.Activity1" android:process=":resident" />
+        <receiver
+            android:name=".keeplive.Receiver1"
+            android:process=":resident" />
 
-        <receiver android:name=".keeplive.Receiver2" android:process="android.media" />
-        <activity android:name=".keeplive.Activity2" android:process="android.media" />
-        <service android:name=".keeplive.Service2" android:process="android.media" />
+        <service
+            android:name=".keeplive.Service1"
+            android:process=":resident" />
 
+        <activity
+            android:name=".keeplive.Activity1"
+            android:process=":resident" />
+
+        <receiver
+            android:name=".keeplive.Receiver2"
+            android:process="android.media" />
+
+        <activity
+            android:name=".keeplive.Activity2"
+            android:process="android.media" />
+
+        <service
+            android:name=".keeplive.Service2"
+            android:process="android.media" />
     </application>
 
 </manifest>

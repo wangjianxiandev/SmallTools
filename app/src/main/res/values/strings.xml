@@ -42,4 +42,5 @@
     <string name="screen">屏幕</string>
     <string name="ram">内存</string>
     <string name="rom">存储</string>
+    <string name="is_reversing_please_wait">正在反编译，请稍候...</string>
 </resources>

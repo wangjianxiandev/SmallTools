@@ -4,6 +4,7 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.os.Build
 import com.wjx.android.smalltools.R
+import com.wjx.android.smalltools.base.BaseActivity
 import com.wjx.android.smalltools.common.DeviceUtils
 import com.wjx.android.smalltools.common.ext.request
 import kotlinx.android.synthetic.main.activity_device_info.*
